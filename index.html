@@ -1,1 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mithun Dama - Portfolio</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Projects Section */
+  .projects-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  .card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .card-img-top {
+    max-height: 180px;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 15px;
+  }
+  .card-title {
+    font-size: 1.25rem;
+  }
+  .card-text {
+    margin-bottom: 15px;
+  }
+
+  /* Skills Section */
+  .skills-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  .skills-section .card {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .skills-section .card-img-top {
+    padding: 20px;
+    background-color: #f8f9fa;
+    height: 180px;
+    object-fit: contain;
+  }
+  .skills-section .card-body {
+    padding: 15px;
+  }
+  .skills-section .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  .skills-section .btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+  }
+  .skills-section .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    padding: 50px 0;
+  }
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  .contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .social-icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  .social-icon:hover {
+    opacity: 0.7;
+  }
+  .contact-section a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .contact-section a:hover {
+    color: #ddd;
+  }
+
+  /* Sticky Navbar */
+  .navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  body {
+    padding-top: 56px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+  }
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      background-color: #343a40;
+    }
+  }
+
+  .logo-img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .experience-section .logo-img,
+  .education-section .logo-img,
+  .skills-section .logo-img {
+    width: 75px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+</style>
+
+</head>
+<body>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mithun Dama</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="assets/IMG_9156.jpg" alt="Mithun Dama">
+    <p>I am a data professional with experience as an Educational Analyst at Toppr and a Data Engineer at Yocket. I founded my startup, Damasmart, during my undergraduate studies, driving innovative tech solutions. Having completed my master's in data science at Pace University, where I interned as a Big Data Engineer, I am now seeking roles in Big Data, Data Engineering, and Data Analysis. My journey combines technical expertise with business acumen, equipping me to implement advanced analytical strategies for efficient data management and reporting.</p>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Projects</h2>
+    <div class="row">
+      <!-- Data Engineering End To End Project Pipeline -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="https://raw.githubusercontent.com/MithunDataPro/MithunDama.github.io/main/assets/Data%20Engineering%20End%20to%20End%20Project%20Architecture%20-%20Project%201.png" class="card-img-top" alt="Data Engineering End To End Pipeline">
+          <div class="card-body">
+            <h5 class="card-title">Data Engineering End To End Project Pipeline</h5>
+            <p class="card-text">The use case for this project involves building an end-to-end solution by ingesting tables from an on-premise SQL Server database using Azure Data Factory and storing the data in Azure Data Lake. Azure Databricks is used to transform the raw data into its cleanest form. We then use Azure Synapse Analytics to load the clean data and finally use Microsoft Power BI to integrate with Azure Synapse Analytics to build an interactive dashboard. Azure Active Directory (AAD) and Azure Key Vault are used for monitoring and governance purposes.</p>
+            <p><strong>Skills Gained:</strong> MSQL, Azure Data Bricks, Azure Data Factory, Azure Synapse Analytics, Azure Key Vault, Azure Active Directory, MySQL, Spark, Python, Scala, Data Governance & Security, Power BI</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Blog Post</a>
+            <a href="#" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/Hotel Image.jfif" class="card-img-top" alt="Enhancing Hotel Management Decision-Making using AI-driven Guest Profiling">
+          <div class="card-body">
+            <h5 class="card-title">Enhancing Hotel Management Decision-Making using AI-driven Guest Profiling</h5>
+            <p class="card-text">This project endeavors to construct an Artificial Intelligence (AI) model aimed at meticulous guest profiling, aspiring to enhance the guest experience while simultaneously boosting operational efficiency within the hotel management framework.</p>
+            <p><strong>Skills Gained:</strong> Machine Learning, Deep Learning, Python, NLP, AI, Prompt Engineering</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Blog Post</a>
+            <a href="#" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/MS-Fabric.jpg" class="card-img-top" alt="Data Pipeline With Microsoft Fabric">
+          <div class="card-body">
+            <h5 class="card-title">Data Pipeline With Microsoft Fabric</h5>
+            <p class="card-text">Currently Working On this Project.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Blog Post</a>
+            <a href="#" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/Databricks.jfif" class="card-img-top" alt="Databricks">
+          <div class="card-body">
+            <h5 class="card-title">Databricks</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/MYSQL_Image.jfif" class="card-img-top" alt="MySQL">
+          <div class="card-body">
+            <h5 class="card-title">MySQL</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/Microsoft-Azure-logo.png" class="card-img-top" alt="Microsoft Azure">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Azure</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/Power-BI-Emblema.jpg" class="card-img-top" alt="Power BI">
+          <div class="card-body">
+            <h5 class="card-title">Power BI</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 5 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/python_image.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 6 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/spark.png" class="card-img-top" alt="Spark">
+          <div class="card-body">
+            <h5 class="card-title">Spark</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Experience</h2>
+    <div class="row">
+      <div class="col-md-12 mb-4">
+        <img src="assets/Intellink.png" alt="IntelliLink Technologies Inc" class="logo-img">
+        <h3>Data Engineer | IntelliLink Technologies, Princeton, New Jersey</h3>
+        <p><strong>Jun 2023 – Sep 2023</strong></p>
+        <ul>
+          <li>Extracted data from different databases and dumped it into Azure Data Lake Zen-2 using Azure Data Factory.</li>
+          <li>Created three containers in Data Lake: Bronze (raw data), Silver (semi-transformed data), and Gold (transformed data).</li>
+          <li>Connected Azure Data Bricks with Data Lake to transform data and used Synapse Analytics to create databases for transformed data.</li>
+          <li>Generated reports using Power BI for transformed data, focusing on transactional data.</li>
+          <li>Enhanced ETL processes, reducing data processing times by 20% and improving data quality.</li>
+          <li>Integrated disparate data sources with a unified data warehouse in Snowflake, ensuring data consistency and reliability.</li>
+          <li>Collaborated with data scientists, analysts, and business stakeholders to understand data requirements and documented data pipeline architectures and best practices.</li>
+        </ul>
+        <p><strong>Skills gained: Scrum, Agile Methodologies, Python, ML, NLP, Azure, Apache Airflow, Spark, SQL</strong></p>
+      </div>
+      <div class="col-md-12 mb-4">
+        <img src="assets/Yocket.jpg" alt="Yocket" class="logo-img">
+        <h3>Big Data Engineer | Yocket, India</h3>
+        <p><strong>Aug 2019 – Aug 2022</strong></p>
+        <ul>
+          <li>Designed and implemented data pipelines using Apache Spark to transform and process large-scale financial data.</li>
+          <li>Extracted and transformed financial data from company databases using SQL, ensuring consistency and accuracy.</li>
+          <li>Utilized Azure Data Factory and Azure Databricks for efficient data pipeline creation and management.</li>
+          <li>Created and maintained tables in Snowflake for a centralized and scalable data warehouse, ensuring seamless data integration from various sources, including ADLS and Blob storage.</li>
+          <li>Developed monthly financial forecasts using SQL and Excel, guiding strategic planning and optimizing budget allocations across departments.</li>
+          <li>Created real-time dashboards in Power BI, presenting complex financial information in a user-friendly format, and connected Power BI to Azure Databricks to provide insights into key financial metrics.</li>
+          <li>Applied statistical models to evaluate financial trends and assess risk, contributing to a 15% increase in resource allocation efficiency, directly impacting the organization’s ability to support more students globally.</li>
+          <li>Led a project to optimize the scholarship allocation process by analyzing historical financial data and student success rates, improving scholarship distribution efficiency by 20%.</li>
+          <li>Collaborated with data scientists and analysts to understand data requirements and deliver actionable insights, documenting data processes, pipeline architectures, and best practices for future reference and scalability.</li>
+          <li>Created various stored procedures to load the data from multiple sources to a single destination, ensuring data quality, reliability, and performance of big data systems.</li>
+          <li>Contributed to the continuous improvement of the data infrastructure, ensuring data quality, reliability, and performance of big data systems.</li>
+        </ul>
+        <p><strong>Skills: MYSQL, NOSQL, Power BI, Databricks, Spark, Python, Azure Cloud - Data Factory, Data Lake, Synapse Analytics, Cosmos DB</strong></p>
+      </div>
+      <div class="col-md-12 mb-4">
+        <img src="assets/Toppr.jfif" alt="Toppr" class="logo-img">
+        <h3>Educational Analyst | Toppr, India</h3>
+        <p><strong>Jul 2018 – Aug 2019</strong></p>
+        <ul>
+          <li>Extracted data from various sources, transformed it using M language in Power BI, and efficiently loaded it into Power BI for reporting and analysis, developing and maintaining robust ETL pipelines.</li>
+          <li>Utilized DAX measures in Power BI to create complex calculations and insightful visualizations, building comprehensive dashboards to present educational data.</li>
+          <li>Created and managed databases using Azure services, ensuring data integrity and scalability, and set up and managed Azure Databricks clusters for data processing and analysis.</li>
+          <li>Integrated Azure Databricks with Power BI for seamless data solutions, enabling real-time data updates and interactive visualizations.</li>
+          <li>Implemented CI/CD pipelines to automate data workflows, ensuring efficient data pipeline management and timely updates.</li>
+          <li>Collaborated with cross-functional teams to gather requirements and deliver tailored data solutions, documenting ETL processes, data models, and best practices.</li>
+          <li>Led initiatives to improve data quality and streamline data operations, managing projects from conception to deployment and resulting in enhanced data accessibility and actionable insights for stakeholders.</li>
+        </ul>
+        <p><strong>Skills: Python, Power BI, Excel, MySQL, Power Query, Azure</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Damasmart Section -->
+<section id="damasmart" class="bg-white">
+  <div class="container">
+    <h2 class="text-center">Damasmart: Revolutionizing Rural Retail</h2>
+    <img src="assets/Damasmart.jpg" alt="Damasmart" class="logo-img">
+    <p>Founded in 2017, Damasmart aimed to bridge the rural-urban divide by providing seamless food, grocery, and vegetable delivery services to rural India. The startup quickly expanded to four regions, employed 35 individuals, and gained over 15,000 customers. Despite challenges like the Covid-19 pandemic, Damasmart secured significant seed funding and support from the Central Government's IEDC initiative.</p>
+    <h4>Skills Gained:</h4>
+    <ul>
+      <li>Business Development</li>
+      <li>Team Leadership</li>
+      <li>Customer Acquisition</li>
+      <li>Fundraising</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education-section bg-white">
+  <div class="container">
+    <h2 class="text-center">Education</h2>
+    <div class="row">
+      <div class="col-md-12 mb-4">
+        <img src="assets/PaceUniversity-logo.jpg" alt="Pace University" class="logo-img">
+        <h3>Pace University, NY</h3>
+        <p><strong>Master of Science in Data Science</strong></p>
+        <p>Relevant Coursework: Data Mining, Machine Learning, Deep Learning, NLP, SQL, DBMS, Math & Stats, Artificial Intelligence (AI).</p>
+        <p><strong>May 2024</strong></p>
+        <p><strong>Skills Gained: Machine Learning, Deep Learning, NLP, AI, Data Mining</strong></p>
+      </div>
+      <div class="col-md-12 mb-4">
+        <img src="assets/JNTUA_Logo.png" alt="Kuppam Engineering College" class="logo-img">
+        <h3>Kuppam Engineering College, Kuppam, India</h3>
+        <p><strong>Bachelor of Engineering</strong></p>
+        <p><strong>July 2018</strong></p>
+        <p><strong>Skills gained: Heat Transfer, Material Engineering, Maths, Thermodynamics</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CADD Engineer Internship Section -->
+<section id="cadd-engineer" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">CADD Engineer Internship</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="assets/cadd-centre-logo.png" alt="CADD Centre Training Services Pvt Ltd" class="img-fluid mb-3" style="max-width: 100%; height: auto;">
+      </div>
+      <div class="col-md-8">
+        <p>At CADD Centre Training Services Pvt Ltd. (June 2018 - September 2018), I enhanced my skills in AutoCAD and CATIA while training both professionals and students. This role involved mastering and teaching essential design and manufacturing software, thereby solidifying my technical expertise.</p>
+        <h4>Technical Skills:</h4>
+        <ul>
+          <li>AutoCAD</li>
+          <li>CATIA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row mb-4">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> mithundama.de@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><img src="https://raw.githubusercontent.com/MithunDataPro/MithunDama.github.io/main/assets/Call.png" alt="Call" style="width: 24px; height: 24px; vertical-align: middle;"> 5512859817</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://linkedin.com/in/mithun-dama-6399a2172" target="_blank">
+          <img src="assets/Linkedin.jfif" alt="LinkedIn" class="social-icon" style="width: 50px; height: 50px;">
+          <p>LinkedIn</p>
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://twitter.com/yourusername" target="_blank">
+          <img src="assets/x.webp" alt="X" class="social-icon" style="width: 50px; height: 50px;">
+          <p>X</p>
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/MithunDataPro" target="_blank">
+          <img src="assets/git hub.jfif" alt="GitHub" class="social-icon" style="width: 50px; height: 50px;">
+          <p>GitHub</p>
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://medium.com/@yourusername" target="_blank">
+          <img src="assets/Medium.jpg" alt="Medium" class="social-icon" style="width: 50px; height: 50px;">
+          <p>Medium</p>
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://www.youtube.com/@MithunDataPro" target="_blank">
+          <img src="assets/youtube.png" alt="YouTube" class="social-icon" style="width: 50px; height: 50px;">
+          <p>YouTube</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
