@@ -1,1 +1,12 @@
+title: Mithun Dama
+logo: /assets/IMG_9156.jpg
+description: I am a data professional with experience as an Educational Analyst at Toppr and a Data Engineer at Yocket. I founded my startup, Damasmart, during my undergraduate studies, driving innovative tech solutions. Having completed my master's in data science at Pace University, where I interned as a Big Data Engineer, I am now seeking roles in Big Data, Data Engineering, and Data Analysis. My journey combines technical expertise with business acumen, equipping me to implement advanced analytical strategies for efficient data management and reporting.
+show_downloads: true
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
 
+# Additional personal details
+email: mithundama.ds97@gmail.com
+github_username: MithunDataPro
+linkedin: https://www.linkedin.com/in/mithun-dama-6399a2172/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bre501LEYSLSpFl1Fs515Gw%3D%3D
